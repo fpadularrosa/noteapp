@@ -13,10 +13,6 @@ server.use(cors());
 server.use('/api', router);
 
 server.use((req, res, next) => {
-    req.header('')
-})
-
-server.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', 'https://notesapp-front.vercel.app/');
     res.header('Access-Control-Allow-Credentials', 'true');
     res.header(
