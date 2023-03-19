@@ -3,7 +3,7 @@ const { MONGO_DB, API_PORT } = process.env;
 const server = require('./src/server.js');
 const mongoose = require('mongoose');
 
-mongoose.connect(MONGO_DB, {
+mongoose.connect('aksk', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
