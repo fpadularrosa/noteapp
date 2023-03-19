@@ -1,15 +1,8 @@
 require('dotenv').config({ path: './.env' });
-const { 
-    API_PORT,
-    MONGO_NAME,
-    MONGO_HOST,
-    PASSWORD_MONGO,
-    MONGO_USER,
-} = process.env;
 const server = require('./src/server.js');
 const mongoose = require('mongoose');
 
-mongoose.connect(`${MONGO_NAME}://${MONGO_USER}:${PASSWORD_MONGO}@${MONGO_HOST}/?retryWrites=true&w=majority`, {
+mongoose.connect(`${process.env.MONGODB_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
