@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -L",
+    "start": "node index.js",
     "test": "jest --detectOpenHandles"
   },
   "keywords": [],
@@ -24,7 +24,6 @@
   "devDependencies": {
     "jest": "^29.3.1",
     "mongodb-memory-server": "^8.11.1",
-    "nodemon": "^2.0.20",
     "supertest": "^6.3.3"
   }
 }
