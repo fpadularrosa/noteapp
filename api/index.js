@@ -14,7 +14,7 @@ mongoose.connect(connectionString, {
     server.listen(API_PORT, (error) => {
         if(error) throw new Error(error);
         console.log('api listening at port: ', API_PORT);
-    })
+    });
 }).catch((error) => {
     console.error(error);
 });
