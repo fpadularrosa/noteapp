@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { API_PORT, MONGO_DB } = process.env;
+const { MONGO_DB, API_PORT } = process.env;
 const server = require('./src/server.js');
 const mongoose = require('mongoose');
 
