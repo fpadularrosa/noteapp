@@ -3,9 +3,7 @@ const { MONGO_DB, API_PORT } = process.env;
 const server = require('./src/server.js');
 const mongoose = require('mongoose');
 
-const connectionString = MONGO_DB;
-
-mongoose.connect(connectionString, {
+mongoose.connect(MONGO_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
