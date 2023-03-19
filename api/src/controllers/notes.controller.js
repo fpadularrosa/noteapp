@@ -5,7 +5,7 @@ module.exports = {
         try {
             res.status(200).json({ success: true, response: await Note.find({}) });
         } catch (error) {
-            res.status(404).json({ success: false, error: error.messagee });
+            res.status(404).json({ success: false, error: error.message });
         }
     },
     deleteNotes: async (req, res) => {
