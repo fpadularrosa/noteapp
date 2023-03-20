@@ -8,7 +8,7 @@ mongoose.connect(`${process.env.MONGO_URL}`, {
 })
     .then(() => {
         console.log('database connected.');
-        server.listen(API_PORT, (error) => {
+        server.listen(`${process.env.API_PORT}`, (error) => {
             if (error) throw new Error(error);
             console.log('api listening at port: ', API_PORT);
         });

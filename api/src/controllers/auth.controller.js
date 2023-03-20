@@ -63,7 +63,7 @@ module.exports = {
                 }
             });
 
-            const emailPort = process.env.EMAIL_PORT || 3001;
+            const emailPort = 'https://notesapp-front.vercel.app/' || 3001;
             const mailOptions = {
                 from: `${process.env.EMAIL_ADDRESS}`,
                 to: `${user.email}`,
