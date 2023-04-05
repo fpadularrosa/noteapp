@@ -3,7 +3,7 @@ const { Note } = require('../models/Note.schema');
 module.exports = {
     notes: async(_req, res) => {
         try {
-            res.status(200).json({ success: true, response: await Note.find({}) });
+            res.status(200).json({ success: true, response: await Note.find({''}) });
         } catch (error) {
             res.status(404).json({ success: false, error: error.message });
         }
