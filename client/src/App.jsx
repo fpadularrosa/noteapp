@@ -7,7 +7,7 @@ import ForgotPassword from './components/ForgetPassword/Forgot.password.jsx';
 import ResetPassword from './components/ResetPassword/Reset.password.jsx';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-axios.defaults.baseURL = process.env.REACT_APP_API || 'http://localhost:3001';
+axios.defaults.baseURL = process.env.REACT_API || 'http://localhost:3001';
 
 function App() {
   const [logged, setLogged] = useState(null);
